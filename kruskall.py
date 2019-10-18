@@ -48,5 +48,8 @@ for i in range(len(matriz)):
         puntosB[i]=0
         distancias[i]=0
         
-#Los elementos diferentes de 0 en los tres arreglos serán los aristas del grafo reccubridor 
-    
+#Los elementos diferentes de 0 en los tres arreglos serán los aristas del grafo recubridor 
+print("Vertices validos:")
+for i in range(len(matriz)):
+    if distancias[i]!=0:
+        print (str(puntosA[i])+", "+str(puntosB[i])+", "+str(distancias[i]))
